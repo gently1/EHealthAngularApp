@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+	<div class="panel-heading"> People Register <div class="btn btn-small btn-primary pull-right" ui-sref="item"> <span class="glyphicon glyphicon-plus"></span> Add Person</div></div>
+	<div class="panel-body">
+		
+		<table class="table table-hover table-bordered table-striped">
+		    <thead>
+		        <tr>
+		            <th>First Name</th>
+		            <th>Last Name</th>
+		            <th>Email</th>
+		            <th></th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr ng-repeat="(key, value) in items">
+		            <td>{{value.firstname}}</td>
+		            <td>{{value.lastname}}</td>
+		            <td>{{value.email}}</td>
+		            <td><a href="" ui-sref="item({documentId: key, documentRevision: value._rev})">edit</a> | <a href="" ng-click="delete(value._id, value._rev)">delete</a></td>
+		        </tr>
+		    </tbody>
+		</table>
+	</div>
+
+</div>
+
+

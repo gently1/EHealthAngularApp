@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>The People App</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-ui-router.min.js"></script>
+		<script src="js/pouchdb-5.3.2.min.js"></script>
+		<script src="js/angular-pouchdb.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-app="ehealthapp">
+     <header>
+            <div class="navbar navbar-default" role="navigation">
+            	<div class="container">
+            		<div class="row">
+						<div class="navbar-header">
+	                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	                           <i class="fa fa-bars icon-custom"></i>
+	                       </button>
+	                       <a class="navbar-brand" href="#" title="The People App">The People App</a>
+						
+	                   </div>
+	                   <a class="btn btn-success pull-right navbar-btn" href="test.html">Run Jasmine Tests</a>				
+		    </div>
+            	</div>
+            </div>
+        </header>
+	    <div class="container">
+		    <div class="row">
+		   			 <div class="col-lg-12">
+		    		<div ui-view></div>
+		    	</div>
+		    </div>
+	    	
+	    
+	    </div>
+    </body>
+</html>
